@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index>
+   <title>XML-Security Basics</title>
+   <entry>../intro</entry>
+   <entry>xml-security</entry>
+   <entry>sample</entry>
+   <entry>bsp</entry>
+   <entry>../resources/xml-security_resources</entry>
+   <entry>signatures_basics</entry>
+   <entry>signatures_presentation</entry>
+   <entry>signatures_canon_transform</entry>
+   <entry>signatures_canon</entry>
+   <entry>signatures_transform</entry>
+   <entry>signatures_types</entry>
+   <entry>signatures_enveloped</entry>
+   <entry>signatures_enveloping</entry>
+   <entry>signatures_detached</entry>
+   <entry>signatures_syntax</entry>
+   <entry>signatures_syntax_signature</entry>
+   <entry>signatures_syntax_signedinfo</entry>
+   <entry>signatures_syntax_signaturevalue</entry>
+   <entry>signatures_syntax_keyinfo</entry>
+   <entry>signatures_syntax_object</entry>
+   <entry>sample_signed</entry>
+   <entry>signatures_sign</entry>
+   <entry>signatures_verify</entry>
+   <entry>../resources/signatures_resources</entry>
+   <entry>encryption_basics</entry>
+   <entry>encryption_syntax</entry>
+   <entry>encryption_syntax_encryptedtype</entry>
+   <entry>encryption_syntax_encrypteddata</entry>
+   <entry>encryption_syntax_encryptionmethod</entry>
+   <entry>encryption_syntax_keyinfo</entry>
+   <entry>encryption_syntax_cipherdata</entry>
+   <entry>encryption_syntax_encryptionproperties</entry>
+   <entry>sample_encrypted</entry>
+   <entry>encryption_encrypt</entry>
+   <entry>encryption_decrypt</entry>
+   <entry>../resources/encryption_resources</entry>
+   <entry>../license</entry>
+   <entry>../glossary</entry>
+</index>

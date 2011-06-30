@@ -1,5 +1,5 @@
 <project name="XML-Security" default="tutorials" basedir=".">
-    <description>documentation build file for the XML-Security Plug-In</description>
+    <description>This build file generates the XML Security Tools tutorials and help files.</description>
     <!-- set global properties for this build -->
     <property name="xml" location="xml" />
     <property name="xmlBasics" location="xml/basics" />
@@ -12,7 +12,7 @@
     <property name="helpXsl" location="resources/help.xsl" />
 
     <path id="saxon9.classpath">
-        <pathelement location="libs/saxon9.jar"/>
+        <pathelement location="libs/saxon9he.jar"/>
     </path>
 
     <target name="help" description="create the online help files">
@@ -417,7 +417,7 @@
             <classpath refid="saxon9.classpath"/>
             <arg value="-o"/>
             <arg value="${tutorials}/basics.html"/>
-            <arg value="${xml}/tutorial_basics.xml"/>
+            <arg value="${xml}/basics/toc.xml"/>
             <arg value="${tutorialXsl}"/>
         </java>
     </target>
@@ -427,7 +427,7 @@
             <classpath refid="saxon9.classpath"/>
             <arg value="-o"/>
             <arg value="${tutorials}/plugin.html"/>
-            <arg value="${xml}/tutorial_plugin.xml"/>
+            <arg value="${xml}/plugin/toc.xml"/>
             <arg value="${tutorialXsl}"/>
         </java>
     </target>
@@ -437,7 +437,7 @@
             <classpath refid="saxon9.classpath"/>
             <arg value="-o"/>
             <arg value="${tutorials}/guide.html"/>
-            <arg value="${xml}/tutorial_guide.xml"/>
+            <arg value="${xml}/guide/toc.xml"/>
             <arg value="${tutorialXsl}"/>
         </java>
     </target>

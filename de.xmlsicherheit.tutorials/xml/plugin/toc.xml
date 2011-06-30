@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index>
+   <title>XML-Security Plug-In</title>
+   <entry>../intro</entry>
+   <entry>overview</entry>
+   <entry>cheatsheets</entry>
+   <entry>prefs</entry>
+   <entry>prefs_sign</entry>
+   <entry>prefs_encrypt</entry>
+   <entry>quick</entry>
+   <entry>sign</entry>
+   <entry>sign_page_resource</entry>
+   <entry>sign_page_keys</entry>
+   <entry>sign_page_open_key</entry>
+   <entry>sign_page_create_key</entry>
+   <entry>sign_page_create_keystore</entry>
+   <entry>sign_page_algorithms</entry>
+   <entry>verify</entry>
+   <entry>encrypt</entry>
+   <entry>encrypt_page_resource</entry>
+   <entry>encrypt_page_algorithms</entry>
+   <entry>decrypt</entry>
+   <entry>decrypt_page_decryption</entry>
+   <entry>canonicalize</entry>
+   <entry>../resources/plug-in_resources</entry>
+   <entry>../license</entry>
+   <entry>../glossary</entry>
+</index>
