@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index>
+   <title>XML-Security Basics</title>
+   <entry>../xml/intro</entry>
+   <entry>../xml/basics/xml-security</entry>
+   <entry>../xml/basics/sample</entry>
+   <entry>../xml/basics/bsp</entry>
+   <entry>../xml/resources/xml-security_resources</entry>
+   <entry>../xml/basics/signatures_basics</entry>
+   <entry>../xml/basics/signatures_presentation</entry>
+   <entry>../xml/basics/signatures_canon_transform</entry>
+   <entry>../xml/basics/signatures_canon</entry>
+   <entry>../xml/basics/signatures_transform</entry>
+   <entry>../xml/basics/signatures_types</entry>
+   <entry>../xml/basics/signatures_enveloped</entry>
+   <entry>../xml/basics/signatures_enveloping</entry>
+   <entry>../xml/basics/signatures_detached</entry>
+   <entry>../xml/basics/signatures_syntax</entry>
+   <entry>../xml/basics/signatures_syntax_signature</entry>
+   <entry>../xml/basics/signatures_syntax_signedinfo</entry>
+   <entry>../xml/basics/signatures_syntax_signaturevalue</entry>
+   <entry>../xml/basics/signatures_syntax_keyinfo</entry>
+   <entry>../xml/basics/signatures_syntax_object</entry>
+   <entry>../xml/basics/sample_signed</entry>
+   <entry>../xml/basics/signatures_sign</entry>
+   <entry>../xml/basics/signatures_verify</entry>
+   <entry>../xml/resources/signatures_resources</entry>
+   <entry>../xml/basics/encryption_basics</entry>
+   <entry>../xml/basics/encryption_syntax</entry>
+   <entry>../xml/basics/encryption_syntax_encryptedtype</entry>
+   <entry>../xml/basics/encryption_syntax_encrypteddata</entry>
+   <entry>../xml/basics/encryption_syntax_encryptionmethod</entry>
+   <entry>../xml/basics/encryption_syntax_keyinfo</entry>
+   <entry>../xml/basics/encryption_syntax_cipherdata</entry>
+   <entry>../xml/basics/encryption_syntax_encryptionproperties</entry>
+   <entry>../xml/basics/sample_encrypted</entry>
+   <entry>../xml/basics/encryption_encrypt</entry>
+   <entry>../xml/basics/encryption_decrypt</entry>
+   <entry>../xml/resources/encryption_resources</entry>
+   <entry>../xml/license</entry>
+   <entry>../xml/glossary</entry>
+</index>

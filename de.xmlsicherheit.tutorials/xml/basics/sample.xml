@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../resources/stylesheet.xsl"?>
+<chapter category="basics" xmlns="http://www.xml-sicherheit.de" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xml:id="sample" xml:lang="de" xsi:schemaLocation="http://www.xml-sicherheit.de ../../resources/documentation.xsd">
+	<title>Beispiel</title>
+	<text>
+		<p>Auf das folgende XML-Dokument wird in der Online-Hilfe (Tutorials) und den Cheat Sheets im XML-Security Plug-In immer wieder zurückgegriffen. Das XML-Dokument stellt eine fiktive Rechnung dar und wird im Verlauf des Tutorials signiert und verschlüsselt werden. Bei Verwendung der Cheat Sheets wird damit das XML-Dokument <strong>FirstSteps.xml</strong> in dem ebenfalls angelegten Projekt <strong>XML-Security</strong> erstellt.</p>
+		<code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;Invoice&gt;
+ &lt;ID&gt;IN 2008/00645&lt;/ID&gt;
+ &lt;IssueDate&gt;2008-03-30&lt;/IssueDate&gt;
+ &lt;BuyerParty&gt;
+  &lt;ID&gt;458746&lt;/ID&gt;
+  &lt;name&gt;John Doe&lt;/name&gt;
+ &lt;/BuyerParty&gt;
+ &lt;PaymentMeans&gt;
+  &lt;PayeeFinancialAccount&gt;
+   &lt;ID&gt;07044961&lt;/ID&gt;
+   &lt;Name&gt;The Specialists Company&lt;/Name&gt;
+   &lt;AccountTypeCode&gt;Credit&lt;/AccountTypeCode&gt;
+   &lt;FinancialInstitutionBranch&gt;
+    &lt;ID&gt;776631&lt;/ID&gt;
+    &lt;Institution&gt;LOYDGB852&lt;/Institution&gt;
+   &lt;/FinancialInstitutionBranch&gt;
+  &lt;/PayeeFinancialAccount&gt;
+ &lt;/PaymentMeans&gt;
+ &lt;TotalAmount currencyID=&quot;€&quot;&gt;382.00&lt;/TotalAmount&gt;
+ &lt;!-- item 1 --&gt;
+ &lt;InvoiceLine id=&quot;1&quot;&gt;
+  &lt;Quantity&gt;2&lt;/Quantity&gt;
+  &lt;LineAmount currencyID=&quot;€&quot;&gt;205.00&lt;/LineAmount&gt;
+  &lt;Item id=&quot;236WV&quot;&gt;
+   &lt;BasePrice currencyID=&quot;€&quot;&gt;102.50&lt;/BasePrice&gt;
+  &lt;/Item&gt;
+ &lt;/InvoiceLine&gt;
+ &lt;!-- item 2 --&gt;
+ &lt;InvoiceLine id=&quot;2&quot;&gt;
+  &lt;Quantity&gt;1&lt;/Quantity&gt;
+  &lt;LineAmount currencyID=&quot;€&quot;&gt;177.00&lt;/LineAmount&gt;
+  &lt;Item id=&quot;193DX&quot;&gt;
+   &lt;BasePrice currencyID=&quot;€&quot;&gt;177.00&lt;/BasePrice&gt;
+  &lt;/Item&gt;
+ &lt;/InvoiceLine&gt;
+&lt;/Invoice&gt;</code>
+		<p>Das Beispiel <link id="sample_signed.html">signiert</link> (<link id="sample_signed.html#envelopedSignature">enveloped</link>, <link id="sample_signed.html#envelopingSignature">enveloping</link>, <link id="sample_signed.html#detachedSignature">detached</link>) oder <link id="sample_encrypted.html">verschlüsselt</link> (<link id="sample_encrypted.html#envelopingEncryption">enveloping</link>, <link id="sample_encrypted.html#detachedEncryption">detached</link>).</p>
+	</text>
+</chapter>

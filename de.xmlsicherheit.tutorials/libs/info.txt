@@ -1,0 +1,5 @@
+The XML-Security Plug-In documentation uses "The Saxon XSLT and XQuery Processor from Saxonica Limited"
+to transform the XML documents into various HTML help files. This processor is distributed under the 
+Mozilla Public License Version 1.0. You may obtain a copy of the License at http://www.mozilla.org/MPL/
+
+The Saxon XSLT and XQuery Processor from Saxonica Limited is available at http://www.saxonica.com/

@@ -1,0 +1,116 @@
+@page {
+	margin: 2cm 1.8cm 1.8cm 2cm;
+}
+
+body {
+	background-color: #fff;
+	color: #000;
+	font-family: Georgia, serif;
+}
+
+h1 {
+	font-size: 1.2em;
+	color: #333;
+	font-family: Arial, sans-serif;
+}
+
+h2 {
+	font-size: 1.1em;
+	font-weight: bold;
+	color: #666;
+	font-family: Arial, sans-serif;
+}
+
+h3 {
+	font-size: 1.1em;
+	font-style: italic;
+	color: #666;
+	font-family: Arial, sans-serif;
+}
+
+h4 {
+	font-size: 1.1em;
+	font-weight: bold;
+	color: #666;
+	line-height: 0px;
+	font-family: Arial, sans-serif;
+}
+
+div {
+	font-size: 0.8em;
+	text-decoration: none;
+}
+
+p,td,ul,ol {
+	font-size: 1em;
+    line-height: 1.1em;
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: square;
+}
+
+ul.none {
+	list-style-type: none;
+	padding: 0px 0px 0px 10px;
+}
+
+strong {
+	font-weight: bold;
+}
+
+em {
+	font-style: italic;
+}
+
+table {
+	border-color: #000;
+	border-width: thin;
+	border-style: solid;
+	width: 100%;
+}
+
+th {
+	font-size: 0.9em;
+	font-weight: bold;
+	text-decoration: none;
+	background-color: #ccc;
+	text-align: left;
+}
+
+tr {
+	vertical-align: top;
+}
+
+td {
+	font-size: 0.8em;
+}
+
+div.code {
+	background-color: #fff;
+	border-left-width: 8px;
+	border-left-color: #fff;
+	border-left-style: solid;
+	margin-left: 5px;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 1.1em;
+}
+
+a:link,a:visited,a:hover,a:active {
+	font-weight: normal;
+	font-size: 1.0em;
+	text-decoration: none;
+	color: #006;
+}
+
+.resource {
+	border-color: #000;
+	border-width: thin;
+	border-style: solid;
+	padding: 2px 0px 2px 5px;
+}
+
+.resource a {
+	padding-left: 0.5em;
+}

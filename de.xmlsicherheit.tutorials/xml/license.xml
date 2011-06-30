@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../resources/stylesheet.xsl"?>
+<chapter category="general" xmlns="http://www.xml-sicherheit.de" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xml:id="license" xml:lang="de" xsi:schemaLocation="http://www.xml-sicherheit.de ../resources/documentation.xsd">
+	<title>Lizenz</title>
+	<text>
+		<p>Das <strong>XML-Security Plug-In</strong> steht unter der <keyword>Eclipse Public License Version 1.0</keyword>, einsehbar unter <link id="http://www.eclipse.org/legal/epl-v10.html">http://www.eclipse.org/legal/epl-v10.html</link>.</p>
+		<p>Die für das XML-Security Plug-in notwendige Apache XML Security API (<keyword>Santuario</keyword>) im Plug-in <strong>org.apache.xml.security</strong> sowie Apache Xalan im Plug-in <strong>org.apache.xalan</strong> stehen unter der <keyword>Apache Software License Version 2.0</keyword>. Diese ist einsehbar unter <link id="http://www.apache.org/licenses/LICENSE-2.0.html">http://www.apache.org/licenses/LICENSE-2.0.html</link>.</p>
+	</text>
+</chapter>
