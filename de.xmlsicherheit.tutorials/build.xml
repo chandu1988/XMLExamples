@@ -11,27 +11,27 @@
     <property name="tutorialXsl" location="resources/tutorials.xsl" />
     <property name="helpXsl" location="resources/help.xsl" />
 
-    <path id="saxon9.classpath">
+    <path id="saxon.classpath">
         <pathelement location="libs/saxon9he.jar"/>
     </path>
 
     <target name="help" description="create the online help files">
         <java classname="net.sf.saxon.Transform">
-            <classpath refid="saxon9.classpath"/>
+            <classpath refid="saxon.classpath"/>
             <arg value="-o"/>
             <arg value="${help}/book.html"/>
             <arg value="${xml}/book.xml"/>
             <arg value="${helpXsl}"/>
         </java>
         <java classname="net.sf.saxon.Transform">
-            <classpath refid="saxon9.classpath"/>
+            <classpath refid="saxon.classpath"/>
             <arg value="-o"/>
             <arg value="${help}/glossary.html"/>
             <arg value="${xml}/glossary.xml"/>
             <arg value="${helpXsl}"/>
         </java>
         <java classname="net.sf.saxon.Transform">
-            <classpath refid="saxon9.classpath"/>
+            <classpath refid="saxon.classpath"/>
             <arg value="-o"/>
             <arg value="${help}/overview.html"/>
             <arg value="${xml}/overview.xml"/>
@@ -44,224 +44,224 @@
 
     <target name="helpBasics">
         <java classname="net.sf.saxon.Transform">
-            <classpath refid="saxon9.classpath"/>
+            <classpath refid="saxon.classpath"/>
             <arg value="-o"/>
             <arg value="${helpBasics}/xml-security.html"/>
             <arg value="${xmlBasics}/xml-security.xml"/>
             <arg value="${helpXsl}"/>
         </java>
         <java classname="net.sf.saxon.Transform">
-            <classpath refid="saxon9.classpath"/>
+            <classpath refid="saxon.classpath"/>
             <arg value="-o"/>
             <arg value="${helpBasics}/sample.html"/>
             <arg value="${xmlBasics}/sample.xml"/>
             <arg value="${helpXsl}"/>
         </java>
         <java classname="net.sf.saxon.Transform">
-            <classpath refid="saxon9.classpath"/>
+            <classpath refid="saxon.classpath"/>
             <arg value="-o"/>
             <arg value="${helpBasics}/bsp.html"/>
             <arg value="${xmlBasics}/bsp.xml"/>
             <arg value="${helpXsl}"/>
         </java>
         <java classname="net.sf.saxon.Transform">
-            <classpath refid="saxon9.classpath"/>
+            <classpath refid="saxon.classpath"/>
             <arg value="-o"/>
             <arg value="${helpBasics}/signatures_basics.html"/>
             <arg value="${xmlBasics}/signatures_basics.xml"/>
             <arg value="${helpXsl}"/>
         </java>
         <java classname="net.sf.saxon.Transform">
-            <classpath refid="saxon9.classpath"/>
+            <classpath refid="saxon.classpath"/>
             <arg value="-o"/>
             <arg value="${helpBasics}/signatures_presentation.html"/>
             <arg value="${xmlBasics}/signatures_presentation.xml"/>
             <arg value="${helpXsl}"/>
         </java>
         <java classname="net.sf.saxon.Transform">
-            <classpath refid="saxon9.classpath"/>
+            <classpath refid="saxon.classpath"/>
             <arg value="-o"/>
             <arg value="${helpBasics}/signatures_canon_transform.html"/>
             <arg value="${xmlBasics}/signatures_canon_transform.xml"/>
             <arg value="${helpXsl}"/>
         </java>
         <java classname="net.sf.saxon.Transform">
-            <classpath refid="saxon9.classpath"/>
+            <classpath refid="saxon.classpath"/>
             <arg value="-o"/>
             <arg value="${helpBasics}/signatures_canon.html"/>
             <arg value="${xmlBasics}/signatures_canon.xml"/>
             <arg value="${helpXsl}"/>
         </java>
         <java classname="net.sf.saxon.Transform">
-            <classpath refid="saxon9.classpath"/>
+            <classpath refid="saxon.classpath"/>
             <arg value="-o"/>
             <arg value="${helpBasics}/signatures_transform.html"/>
             <arg value="${xmlBasics}/signatures_transform.xml"/>
             <arg value="${helpXsl}"/>
         </java>
         <java classname="net.sf.saxon.Transform">
-            <classpath refid="saxon9.classpath"/>
+            <classpath refid="saxon.classpath"/>
             <arg value="-o"/>
             <arg value="${helpBasics}/signatures_types.html"/>
             <arg value="${xmlBasics}/signatures_types.xml"/>
             <arg value="${helpXsl}"/>
         </java>
         <java classname="net.sf.saxon.Transform">
-            <classpath refid="saxon9.classpath"/>
+            <classpath refid="saxon.classpath"/>
             <arg value="-o"/>
             <arg value="${helpBasics}/signatures_enveloped.html"/>
             <arg value="${xmlBasics}/signatures_enveloped.xml"/>
             <arg value="${helpXsl}"/>
         </java>
         <java classname="net.sf.saxon.Transform">
-            <classpath refid="saxon9.classpath"/>
+            <classpath refid="saxon.classpath"/>
             <arg value="-o"/>
             <arg value="${helpBasics}/signatures_enveloping.html"/>
             <arg value="${xmlBasics}/signatures_enveloping.xml"/>
             <arg value="${helpXsl}"/>
         </java>
         <java classname="net.sf.saxon.Transform">
-            <classpath refid="saxon9.classpath"/>
+            <classpath refid="saxon.classpath"/>
             <arg value="-o"/>
             <arg value="${helpBasics}/signatures_detached.html"/>
             <arg value="${xmlBasics}/signatures_detached.xml"/>
             <arg value="${helpXsl}"/>
         </java>
         <java classname="net.sf.saxon.Transform">
-            <classpath refid="saxon9.classpath"/>
+            <classpath refid="saxon.classpath"/>
             <arg value="-o"/>
             <arg value="${helpBasics}/signatures_syntax.html"/>
             <arg value="${xmlBasics}/signatures_syntax.xml"/>
             <arg value="${helpXsl}"/>
         </java>
         <java classname="net.sf.saxon.Transform">
-            <classpath refid="saxon9.classpath"/>
+            <classpath refid="saxon.classpath"/>
             <arg value="-o"/>
             <arg value="${helpBasics}/signatures_syntax_signature.html"/>
             <arg value="${xmlBasics}/signatures_syntax_signature.xml"/>
             <arg value="${helpXsl}"/>
         </java>
         <java classname="net.sf.saxon.Transform">
-            <classpath refid="saxon9.classpath"/>
+            <classpath refid="saxon.classpath"/>
             <arg value="-o"/>
             <arg value="${helpBasics}/signatures_syntax_signedinfo.html"/>
             <arg value="${xmlBasics}/signatures_syntax_signedinfo.xml"/>
             <arg value="${helpXsl}"/>
         </java>
         <java classname="net.sf.saxon.Transform">
-            <classpath refid="saxon9.classpath"/>
+            <classpath refid="saxon.classpath"/>
             <arg value="-o"/>
             <arg value="${helpBasics}/signatures_syntax_signaturevalue.html"/>
             <arg value="${xmlBasics}/signatures_syntax_signaturevalue.xml"/>
             <arg value="${helpXsl}"/>
         </java>
         <java classname="net.sf.saxon.Transform">
-            <classpath refid="saxon9.classpath"/>
+            <classpath refid="saxon.classpath"/>
             <arg value="-o"/>
             <arg value="${helpBasics}/signatures_syntax_keyinfo.html"/>
             <arg value="${xmlBasics}/signatures_syntax_keyinfo.xml"/>
             <arg value="${helpXsl}"/>
         </java>
         <java classname="net.sf.saxon.Transform">
-            <classpath refid="saxon9.classpath"/>
+            <classpath refid="saxon.classpath"/>
             <arg value="-o"/>
             <arg value="${helpBasics}/signatures_syntax_object.html"/>
             <arg value="${xmlBasics}/signatures_syntax_object.xml"/>
             <arg value="${helpXsl}"/>
         </java>
         <java classname="net.sf.saxon.Transform">
-            <classpath refid="saxon9.classpath"/>
+            <classpath refid="saxon.classpath"/>
             <arg value="-o"/>
             <arg value="${helpBasics}/sample_signed.html"/>
             <arg value="${xmlBasics}/sample_signed.xml"/>
             <arg value="${helpXsl}"/>
         </java>
         <java classname="net.sf.saxon.Transform">
-            <classpath refid="saxon9.classpath"/>
+            <classpath refid="saxon.classpath"/>
             <arg value="-o"/>
             <arg value="${helpBasics}/signatures_sign.html"/>
             <arg value="${xmlBasics}/signatures_sign.xml"/>
             <arg value="${helpXsl}"/>
         </java>
         <java classname="net.sf.saxon.Transform">
-            <classpath refid="saxon9.classpath"/>
+            <classpath refid="saxon.classpath"/>
             <arg value="-o"/>
             <arg value="${helpBasics}/signatures_verify.html"/>
             <arg value="${xmlBasics}/signatures_verify.xml"/>
             <arg value="${helpXsl}"/>
         </java>
         <java classname="net.sf.saxon.Transform">
-            <classpath refid="saxon9.classpath"/>
+            <classpath refid="saxon.classpath"/>
             <arg value="-o"/>
             <arg value="${helpBasics}/encryption_basics.html"/>
             <arg value="${xmlBasics}/encryption_basics.xml"/>
             <arg value="${helpXsl}"/>
         </java>
         <java classname="net.sf.saxon.Transform">
-            <classpath refid="saxon9.classpath"/>
+            <classpath refid="saxon.classpath"/>
             <arg value="-o"/>
             <arg value="${helpBasics}/encryption_syntax.html"/>
             <arg value="${xmlBasics}/encryption_syntax.xml"/>
             <arg value="${helpXsl}"/>
         </java>
         <java classname="net.sf.saxon.Transform">
-            <classpath refid="saxon9.classpath"/>
+            <classpath refid="saxon.classpath"/>
             <arg value="-o"/>
             <arg value="${helpBasics}/encryption_syntax_encryptedtype.html"/>
             <arg value="${xmlBasics}/encryption_syntax_encryptedtype.xml"/>
             <arg value="${helpXsl}"/>
         </java>
         <java classname="net.sf.saxon.Transform">
-            <classpath refid="saxon9.classpath"/>
+            <classpath refid="saxon.classpath"/>
             <arg value="-o"/>
             <arg value="${helpBasics}/encryption_syntax_encrypteddata.html"/>
             <arg value="${xmlBasics}/encryption_syntax_encrypteddata.xml"/>
             <arg value="${helpXsl}"/>
         </java>
         <java classname="net.sf.saxon.Transform">
-            <classpath refid="saxon9.classpath"/>
+            <classpath refid="saxon.classpath"/>
             <arg value="-o"/>
             <arg value="${helpBasics}/encryption_syntax_encryptionmethod.html"/>
             <arg value="${xmlBasics}/encryption_syntax_encryptionmethod.xml"/>
             <arg value="${helpXsl}"/>
         </java>
         <java classname="net.sf.saxon.Transform">
-            <classpath refid="saxon9.classpath"/>
+            <classpath refid="saxon.classpath"/>
             <arg value="-o"/>
             <arg value="${helpBasics}/encryption_syntax_keyinfo.html"/>
             <arg value="${xmlBasics}/encryption_syntax_keyinfo.xml"/>
             <arg value="${helpXsl}"/>
         </java>
         <java classname="net.sf.saxon.Transform">
-            <classpath refid="saxon9.classpath"/>
+            <classpath refid="saxon.classpath"/>
             <arg value="-o"/>
             <arg value="${helpBasics}/encryption_syntax_cipherdata.html"/>
             <arg value="${xmlBasics}/encryption_syntax_cipherdata.xml"/>
             <arg value="${helpXsl}"/>
         </java>
         <java classname="net.sf.saxon.Transform">
-            <classpath refid="saxon9.classpath"/>
+            <classpath refid="saxon.classpath"/>
             <arg value="-o"/>
             <arg value="${helpBasics}/encryption_syntax_encryptionproperties.html"/>
             <arg value="${xmlBasics}/encryption_syntax_encryptionproperties.xml"/>
             <arg value="${helpXsl}"/>
         </java>
         <java classname="net.sf.saxon.Transform">
-            <classpath refid="saxon9.classpath"/>
+            <classpath refid="saxon.classpath"/>
             <arg value="-o"/>
             <arg value="${helpBasics}/sample_encrypted.html"/>
             <arg value="${xmlBasics}/sample_encrypted.xml"/>
             <arg value="${helpXsl}"/>
         </java>
         <java classname="net.sf.saxon.Transform">
-            <classpath refid="saxon9.classpath"/>
+            <classpath refid="saxon.classpath"/>
             <arg value="-o"/>
             <arg value="${helpBasics}/encryption_encrypt.html"/>
             <arg value="${xmlBasics}/encryption_encrypt.xml"/>
             <arg value="${helpXsl}"/>
         </java>
         <java classname="net.sf.saxon.Transform">
-            <classpath refid="saxon9.classpath"/>
+            <classpath refid="saxon.classpath"/>
             <arg value="-o"/>
             <arg value="${helpBasics}/encryption_decrypt.html"/>
             <arg value="${xmlBasics}/encryption_decrypt.xml"/>
@@ -271,140 +271,140 @@
 
 	<target name="helpPlugin">
         <java classname="net.sf.saxon.Transform">
-            <classpath refid="saxon9.classpath"/>
+            <classpath refid="saxon.classpath"/>
             <arg value="-o"/>
             <arg value="${helpPlugin}/overview.html"/>
             <arg value="${xmlPlugin}/overview.xml"/>
             <arg value="${helpXsl}"/>
         </java>
         <java classname="net.sf.saxon.Transform">
-            <classpath refid="saxon9.classpath"/>
+            <classpath refid="saxon.classpath"/>
             <arg value="-o"/>
             <arg value="${helpPlugin}/cheatsheets.html"/>
             <arg value="${xmlPlugin}/cheatsheets.xml"/>
             <arg value="${helpXsl}"/>
         </java>
         <java classname="net.sf.saxon.Transform">
-            <classpath refid="saxon9.classpath"/>
+            <classpath refid="saxon.classpath"/>
             <arg value="-o"/>
             <arg value="${helpPlugin}/prefs.html"/>
             <arg value="${xmlPlugin}/prefs.xml"/>
             <arg value="${helpXsl}"/>
         </java>
         <java classname="net.sf.saxon.Transform">
-            <classpath refid="saxon9.classpath"/>
+            <classpath refid="saxon.classpath"/>
             <arg value="-o"/>
             <arg value="${helpPlugin}/prefs_sign.html"/>
             <arg value="${xmlPlugin}/prefs_sign.xml"/>
             <arg value="${helpXsl}"/>
         </java>
         <java classname="net.sf.saxon.Transform">
-            <classpath refid="saxon9.classpath"/>
+            <classpath refid="saxon.classpath"/>
             <arg value="-o"/>
             <arg value="${helpPlugin}/prefs_encrypt.html"/>
             <arg value="${xmlPlugin}/prefs_encrypt.xml"/>
             <arg value="${helpXsl}"/>
         </java>
         <java classname="net.sf.saxon.Transform">
-            <classpath refid="saxon9.classpath"/>
+            <classpath refid="saxon.classpath"/>
             <arg value="-o"/>
             <arg value="${helpPlugin}/quick.html"/>
             <arg value="${xmlPlugin}/quick.xml"/>
             <arg value="${helpXsl}"/>
         </java>
         <java classname="net.sf.saxon.Transform">
-            <classpath refid="saxon9.classpath"/>
+            <classpath refid="saxon.classpath"/>
             <arg value="-o"/>
             <arg value="${helpPlugin}/sign.html"/>
             <arg value="${xmlPlugin}/sign.xml"/>
             <arg value="${helpXsl}"/>
         </java>
         <java classname="net.sf.saxon.Transform">
-            <classpath refid="saxon9.classpath"/>
+            <classpath refid="saxon.classpath"/>
             <arg value="-o"/>
             <arg value="${helpPlugin}/sign_page_resource.html"/>
             <arg value="${xmlPlugin}/sign_page_resource.xml"/>
             <arg value="${helpXsl}"/>
         </java>
         <java classname="net.sf.saxon.Transform">
-            <classpath refid="saxon9.classpath"/>
+            <classpath refid="saxon.classpath"/>
             <arg value="-o"/>
             <arg value="${helpPlugin}/sign_page_keys.html"/>
             <arg value="${xmlPlugin}/sign_page_keys.xml"/>
             <arg value="${helpXsl}"/>
         </java>
         <java classname="net.sf.saxon.Transform">
-            <classpath refid="saxon9.classpath"/>
+            <classpath refid="saxon.classpath"/>
             <arg value="-o"/>
             <arg value="${helpPlugin}/sign_page_open_key.html"/>
             <arg value="${xmlPlugin}/sign_page_open_key.xml"/>
             <arg value="${helpXsl}"/>
         </java>
         <java classname="net.sf.saxon.Transform">
-            <classpath refid="saxon9.classpath"/>
+            <classpath refid="saxon.classpath"/>
             <arg value="-o"/>
             <arg value="${helpPlugin}/sign_page_create_key.html"/>
             <arg value="${xmlPlugin}/sign_page_create_key.xml"/>
             <arg value="${helpXsl}"/>
         </java>
         <java classname="net.sf.saxon.Transform">
-            <classpath refid="saxon9.classpath"/>
+            <classpath refid="saxon.classpath"/>
             <arg value="-o"/>
             <arg value="${helpPlugin}/sign_page_create_keystore.html"/>
             <arg value="${xmlPlugin}/sign_page_create_keystore.xml"/>
             <arg value="${helpXsl}"/>
         </java>
         <java classname="net.sf.saxon.Transform">
-            <classpath refid="saxon9.classpath"/>
+            <classpath refid="saxon.classpath"/>
             <arg value="-o"/>
             <arg value="${helpPlugin}/sign_page_algorithms.html"/>
             <arg value="${xmlPlugin}/sign_page_algorithms.xml"/>
             <arg value="${helpXsl}"/>
         </java>
         <java classname="net.sf.saxon.Transform">
-            <classpath refid="saxon9.classpath"/>
+            <classpath refid="saxon.classpath"/>
             <arg value="-o"/>
             <arg value="${helpPlugin}/verify.html"/>
             <arg value="${xmlPlugin}/verify.xml"/>
             <arg value="${helpXsl}"/>
         </java>
         <java classname="net.sf.saxon.Transform">
-            <classpath refid="saxon9.classpath"/>
+            <classpath refid="saxon.classpath"/>
             <arg value="-o"/>
             <arg value="${helpPlugin}/encrypt.html"/>
             <arg value="${xmlPlugin}/encrypt.xml"/>
             <arg value="${helpXsl}"/>
         </java>
         <java classname="net.sf.saxon.Transform">
-            <classpath refid="saxon9.classpath"/>
+            <classpath refid="saxon.classpath"/>
             <arg value="-o"/>
             <arg value="${helpPlugin}/encrypt_page_resource.html"/>
             <arg value="${xmlPlugin}/encrypt_page_resource.xml"/>
             <arg value="${helpXsl}"/>
         </java>
         <java classname="net.sf.saxon.Transform">
-            <classpath refid="saxon9.classpath"/>
+            <classpath refid="saxon.classpath"/>
             <arg value="-o"/>
             <arg value="${helpPlugin}/encrypt_page_algorithms.html"/>
             <arg value="${xmlPlugin}/encrypt_page_algorithms.xml"/>
             <arg value="${helpXsl}"/>
         </java>
         <java classname="net.sf.saxon.Transform">
-            <classpath refid="saxon9.classpath"/>
+            <classpath refid="saxon.classpath"/>
             <arg value="-o"/>
             <arg value="${helpPlugin}/decrypt.html"/>
             <arg value="${xmlPlugin}/decrypt.xml"/>
             <arg value="${helpXsl}"/>
         </java>
         <java classname="net.sf.saxon.Transform">
-            <classpath refid="saxon9.classpath"/>
+            <classpath refid="saxon.classpath"/>
             <arg value="-o"/>
             <arg value="${helpPlugin}/decrypt_page_decryption.html"/>
             <arg value="${xmlPlugin}/decrypt_page_decryption.xml"/>
             <arg value="${helpXsl}"/>
         </java>
         <java classname="net.sf.saxon.Transform">
-            <classpath refid="saxon9.classpath"/>
+            <classpath refid="saxon.classpath"/>
             <arg value="-o"/>
             <arg value="${helpPlugin}/canonicalize.html"/>
             <arg value="${xmlPlugin}/canonicalize.xml"/>
@@ -414,31 +414,28 @@
 
     <target name="basics" description="create the basics tutorial">
         <java classname="net.sf.saxon.Transform">
-            <classpath refid="saxon9.classpath"/>
-            <arg value="-o"/>
-            <arg value="${tutorials}/basics.html"/>
-            <arg value="${xml}/basics/toc.xml"/>
-            <arg value="${tutorialXsl}"/>
+            <classpath refid="saxon.classpath"/>
+            <arg value="-o:${tutorials}/basics.html"/>
+            <arg value="-s:${xml}/basics/toc.xml"/>
+            <arg value="-xsl:${tutorialXsl}"/>
         </java>
     </target>
 
     <target name="plugin" description="create the plug-in tutorial">
         <java classname="net.sf.saxon.Transform">
-            <classpath refid="saxon9.classpath"/>
-            <arg value="-o"/>
-            <arg value="${tutorials}/plugin.html"/>
-            <arg value="${xml}/plugin/toc.xml"/>
-            <arg value="${tutorialXsl}"/>
+            <classpath refid="saxon.classpath"/>
+            <arg value="-o:${tutorials}/plugin.html"/>
+            <arg value="-s:${xml}/plugin/toc.xml"/>
+            <arg value="-xsl:${tutorialXsl}"/>
         </java>
     </target>
 
     <target name="guide" description="create the guide tutorial">
         <java classname="net.sf.saxon.Transform">
-            <classpath refid="saxon9.classpath"/>
-            <arg value="-o"/>
-            <arg value="${tutorials}/guide.html"/>
-            <arg value="${xml}/guide/toc.xml"/>
-            <arg value="${tutorialXsl}"/>
+            <classpath refid="saxon.classpath"/>
+            <arg value="-o:${tutorials}/guide.html"/>
+            <arg value="-s:${xml}/guide/toc.xml"/>
+            <arg value="-xsl:${tutorialXsl}"/>
         </java>
     </target>
 
