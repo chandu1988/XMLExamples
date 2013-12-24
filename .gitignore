@@ -1,8 +1,7 @@
-
-de.xmlsicherheit.tutorials/target/tutorials/.DS_Store
-
-de.xmlsicherheit.tutorials/target/.DS_Store
-
-de.xmlsicherheit.tutorials/libs/.DS_Store
-
-de.xmlsicherheit.tutorials/.DS_Store
+*.class
+*/bin*
+*/target*
+*/.settings*
+.DS_Store
+Thumbs.db
+*.html
